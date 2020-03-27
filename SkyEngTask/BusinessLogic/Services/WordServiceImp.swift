@@ -23,7 +23,7 @@ final class WordServiceImp {
 
 extension WordServiceImp: WordService {
     
-    func search(_ search: String, page: Int, pageSize: Int, callback: @escaping ResultCallback<[Word]>) {
+    func search(_ search: String, page: Int, pageSize: Int, callback: @escaping ResultCallback<[Word]>) -> NetworkRequest? {
         let url = "https://dictionary.skyeng.ru/api/public/v1/words/search"
         
         let parameters: [String : Any] = [
@@ -32,6 +32,6 @@ extension WordServiceImp: WordService {
             "pageSize": pageSize
         ]
         
-        network.request(url, parameters: parameters, callback: callback)
+        return network.request(url, parameters: parameters, callback: callback)
     }
 }
