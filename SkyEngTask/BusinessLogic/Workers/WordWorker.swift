@@ -6,4 +6,8 @@
 //  Copyright © 2020 Mihail. All rights reserved.
 //
 
-import Foundation
+protocol WordWorker {
+    
+    func loadNextPage(search: String, callback: ResultCallback<[Word]>)
+    func reset()
+}
