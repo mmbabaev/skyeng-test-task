@@ -13,7 +13,6 @@
 		E1008B4D242E6C2D00FCCBB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1008B4B242E6C2D00FCCBB2 /* Main.storyboard */; };
 		E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1008B4E242E6C2E00FCCBB2 /* Assets.xcassets */; };
 		E1008B52242E6C2E00FCCBB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1008B50242E6C2E00FCCBB2 /* LaunchScreen.storyboard */; };
-		E1008B5D242E6C2E00FCCBB2 /* SkyEngTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B5C242E6C2E00FCCBB2 /* SkyEngTaskTests.swift */; };
 		E1008B6B242E726100FCCBB2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B6A242E726100FCCBB2 /* Word.swift */; };
 		E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B6C242E726800FCCBB2 /* Meaning.swift */; };
 		E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B71242E741600FCCBB2 /* NetworkManager.swift */; };
@@ -24,7 +23,14 @@
 		E1008B80242E9D2C00FCCBB2 /* WordServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B7F242E9D2C00FCCBB2 /* WordServiceImp.swift */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
-		E189DD58242EA0ED00155CAD /* Pager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD57242EA0ED00155CAD /* Pager.swift */; };
+		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
+		E189DD61242EA70400155CAD /* AutoMockableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD60242EA70400155CAD /* AutoMockableExtensions.swift */; };
+		E189DD64242EAB5F00155CAD /* Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD63242EAB5F00155CAD /* Generated.swift */; };
+		E189DD66242EAEA500155CAD /* Arbitrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD65242EAEA500155CAD /* Arbitrary.swift */; };
+		E189DD6A242EC67000155CAD /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD69242EC67000155CAD /* TranslateViewController.swift */; };
+		E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD6B242EC6F200155CAD /* TranslatePresenter.swift */; };
+		E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD70242EC83800155CAD /* WordTableViewCell.swift */; };
+		E189DD73242EC83800155CAD /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E189DD71242EC83800155CAD /* WordTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +56,6 @@
 		E1008B51242E6C2E00FCCBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1008B53242E6C2E00FCCBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1008B58242E6C2E00FCCBB2 /* SkyEngTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1008B5C242E6C2E00FCCBB2 /* SkyEngTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTaskTests.swift; sourceTree = "<group>"; };
 		E1008B5E242E6C2E00FCCBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1008B6A242E726100FCCBB2 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		E1008B6C242E726800FCCBB2 /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
@@ -63,7 +68,14 @@
 		E133ABBC4DAB619A23DEEF3C /* Pods_SkyEngTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
-		E189DD57242EA0ED00155CAD /* Pager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pager.swift; sourceTree = "<group>"; };
+		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
+		E189DD60242EA70400155CAD /* AutoMockableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoMockableExtensions.swift; sourceTree = "<group>"; };
+		E189DD63242EAB5F00155CAD /* Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generated.swift; sourceTree = "<group>"; };
+		E189DD65242EAEA500155CAD /* Arbitrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arbitrary.swift; sourceTree = "<group>"; };
+		E189DD69242EC67000155CAD /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		E189DD6B242EC6F200155CAD /* TranslatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
+		E189DD70242EC83800155CAD /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		E189DD71242EC83800155CAD /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +153,8 @@
 		E1008B5B242E6C2E00FCCBB2 /* SkyEngTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1008B5C242E6C2E00FCCBB2 /* SkyEngTaskTests.swift */,
+				E189DD5F242EA6F600155CAD /* Mocks */,
+				E189DD59242EA64C00155CAD /* BusinessLogic */,
 				E1008B5E242E6C2E00FCCBB2 /* Info.plist */,
 			);
 			path = SkyEngTaskTests;
@@ -150,6 +163,8 @@
 		E1008B67242E6F7300FCCBB2 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				E189DD6D242EC80100155CAD /* Scenes */,
+				E189DD6E242EC80700155CAD /* Common */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -160,7 +175,6 @@
 				E1008B77242E7F4B00FCCBB2 /* AppError.swift */,
 				E1008B7B242E853700FCCBB2 /* Result.swift */,
 				E1008B70242E740600FCCBB2 /* Workers */,
-				E189DD56242EA0E500155CAD /* Helpers */,
 				E1008B6F242E740100FCCBB2 /* Services */,
 				E1008B6E242E73FD00FCCBB2 /* Core */,
 			);
@@ -222,12 +236,72 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E189DD56242EA0E500155CAD /* Helpers */ = {
+		E189DD59242EA64C00155CAD /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
-				E189DD57242EA0ED00155CAD /* Pager.swift */,
+				E189DD5A242EA65500155CAD /* Workers */,
 			);
-			path = Helpers;
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		E189DD5A242EA65500155CAD /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		E189DD5F242EA6F600155CAD /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD63242EAB5F00155CAD /* Generated.swift */,
+				E189DD60242EA70400155CAD /* AutoMockableExtensions.swift */,
+				E189DD65242EAEA500155CAD /* Arbitrary.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		E189DD67242EC63200155CAD /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD69242EC67000155CAD /* TranslateViewController.swift */,
+				E189DD6B242EC6F200155CAD /* TranslatePresenter.swift */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		E189DD68242EC64000155CAD /* Word */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		E189DD6D242EC80100155CAD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD67242EC63200155CAD /* Translate */,
+				E189DD68242EC64000155CAD /* Word */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E189DD6E242EC80700155CAD /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD6F242EC81F00155CAD /* Cells */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E189DD6F242EC81F00155CAD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E189DD70242EC83800155CAD /* WordTableViewCell.swift */,
+				E189DD71242EC83800155CAD /* WordTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +312,7 @@
 			buildConfigurationList = E1008B61242E6C2E00FCCBB2 /* Build configuration list for PBXNativeTarget "SkyEngTask" */;
 			buildPhases = (
 				ED4C43727B421CD9FD46A5C2 /* [CP] Check Pods Manifest.lock */,
+				E189DD62242EA97200155CAD /* Generate mocks */,
 				E1008B3E242E6C2D00FCCBB2 /* Sources */,
 				E1008B3F242E6C2D00FCCBB2 /* Frameworks */,
 				E1008B40242E6C2D00FCCBB2 /* Resources */,
@@ -315,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1008B52242E6C2E00FCCBB2 /* LaunchScreen.storyboard in Resources */,
+				E189DD73242EC83800155CAD /* WordTableViewCell.xib in Resources */,
 				E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */,
 				E1008B4D242E6C2D00FCCBB2 /* Main.storyboard in Resources */,
 			);
@@ -369,6 +445,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E189DD62242EA97200155CAD /* Generate mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate mocks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/Sourcery/bin/sourcery --sources . --templates ./Pods/Sourcery/Templates/AutoMockable.stencil --output ./SkyEngTaskTests/Mocks/Generated.swift\n\necho \"@testable import SkyEngTask\" >> \"${SRCROOT}/SkyEngTaskTests/Mocks/Generated.swift\"\n";
+		};
 		ED4C43727B421CD9FD46A5C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,13 +495,15 @@
 				E1008B7E242E9D2400FCCBB2 /* WordService.swift in Sources */,
 				E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */,
 				E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */,
+				E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */,
 				E1008B80242E9D2C00FCCBB2 /* WordServiceImp.swift in Sources */,
 				E1008B78242E7F4B00FCCBB2 /* AppError.swift in Sources */,
+				E189DD6A242EC67000155CAD /* TranslateViewController.swift in Sources */,
 				E1008B6B242E726100FCCBB2 /* Word.swift in Sources */,
 				E1008B7C242E853700FCCBB2 /* Result.swift in Sources */,
 				E1008B74242E742A00FCCBB2 /* NetworkManagerImp.swift in Sources */,
 				E1008B46242E6C2D00FCCBB2 /* AppDelegate.swift in Sources */,
-				E189DD58242EA0ED00155CAD /* Pager.swift in Sources */,
+				E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */,
 				E189DD53242EA06600155CAD /* WordWorker.swift in Sources */,
 				E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */,
 			);
@@ -417,7 +513,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1008B5D242E6C2E00FCCBB2 /* SkyEngTaskTests.swift in Sources */,
+				E189DD64242EAB5F00155CAD /* Generated.swift in Sources */,
+				E189DD61242EA70400155CAD /* AutoMockableExtensions.swift in Sources */,
+				E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */,
+				E189DD66242EAEA500155CAD /* Arbitrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

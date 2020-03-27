@@ -33,4 +33,8 @@ extension NetworkManagerImp: NetworkManager {
 }
 
 
-extension DataRequest: NetworkRequest {}
+extension DataRequest: NetworkRequest {
+    func cancelRequest() {
+        self.cancel()
+    }
+}

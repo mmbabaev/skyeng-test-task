@@ -8,6 +8,6 @@
 
 protocol WordWorker {
     
-    func loadNextPage(search: String, callback: ResultCallback<[Word]>)
+    func loadNextPage(search: String, callback: @escaping ResultCallback<[Word]>)
     func reset()
 }

@@ -6,23 +6,17 @@
 //  Copyright © 2020 Mihail. All rights reserved.
 //
 
-struct Pager {
-    var currentPage: Int
-    
-    
-}
-
 final class WordWorkerImp {
     
     // MARK: - Properties
-    
-    let pageSize = 10
     
     let service: WordService
     
     var currentPage = 0
     var isEnded = false
     var currentRequest: NetworkRequest?
+    
+    let pageSize = 10
     
     // MARK: - Init
 
@@ -35,12 +29,19 @@ final class WordWorkerImp {
 
 extension WordWorkerImp: WordWorker {
     
-    func loadNextPage(search: String, callback: (Result<[Word]>) -> Void) {
-        guard
-        currentRequest = service.search(search, page: currentPage, pageSize: pageSize) { [weak self] result in
+    func loadNextPage(search: String, callback: @escaping (Result<[Word]>) -> Void) {
+        guard !isEnded else {
+            callback(.success([]))
+            return
+        }
+        
+        currentRequest?.cancelRequest()
+        currentRequest = service.search(search,
+                                        page: currentPage,
+                                        pageSize: pageSize) { [weak self] result in
             switch result {
             case .success(let words):
-                self?.success
+                self?.successLoaded(words)
                 callback(.success(words))
             case .failure(let error):
                 callback(.failure(error))
@@ -58,8 +59,12 @@ extension WordWorkerImp: WordWorker {
 
 private extension WordWorkerImp {
     
-    func incrementPage() {
+    func successLoaded(_ words: [Word]) {
         currentPage = currentPage + 1
+        
+        if words.count < pageSize {
+            isEnded = true
+        }
     }
 }
 

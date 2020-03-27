@@ -11,5 +11,5 @@ protocol WordService {
     func search(_ search: String,
                 page: Int,
                 pageSize: Int,
-                callback: @escaping ResultCallback<[Word]>)
+                callback: @escaping ResultCallback<[Word]>) -> NetworkRequest?
 }

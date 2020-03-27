@@ -9,7 +9,7 @@
 import Foundation
 
 protocol NetworkRequest {
-    func cancel() -> Self
+    func cancelRequest()
 }
 
 protocol NetworkManager {
