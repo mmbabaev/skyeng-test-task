@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1008B4E242E6C2E00FCCBB2 /* Assets.xcassets */; };
 		E1008B52242E6C2E00FCCBB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1008B50242E6C2E00FCCBB2 /* LaunchScreen.storyboard */; };
 		E1008B5D242E6C2E00FCCBB2 /* SkyEngTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B5C242E6C2E00FCCBB2 /* SkyEngTaskTests.swift */; };
+		E1008B6B242E726100FCCBB2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B6A242E726100FCCBB2 /* Word.swift */; };
+		E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B6C242E726800FCCBB2 /* Meaning.swift */; };
+		E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B71242E741600FCCBB2 /* NetworkManager.swift */; };
+		E1008B74242E742A00FCCBB2 /* NetworkManagerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B73242E742A00FCCBB2 /* NetworkManagerImp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		E1008B58242E6C2E00FCCBB2 /* SkyEngTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyEngTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1008B5C242E6C2E00FCCBB2 /* SkyEngTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyEngTaskTests.swift; sourceTree = "<group>"; };
 		E1008B5E242E6C2E00FCCBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1008B6A242E726100FCCBB2 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		E1008B6C242E726800FCCBB2 /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		E1008B71242E741600FCCBB2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E1008B73242E742A00FCCBB2 /* NetworkManagerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerImp.swift; sourceTree = "<group>"; };
 		E133ABBC4DAB619A23DEEF3C /* Pods_SkyEngTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,7 +93,6 @@
 				502FC6740F9005A7C46D41D5 /* Pods-SkyEngTaskTests.debug.xcconfig */,
 				D8FD28D3A889A7047102DBAA /* Pods-SkyEngTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,6 +119,9 @@
 		E1008B44242E6C2D00FCCBB2 /* SkyEngTask */ = {
 			isa = PBXGroup;
 			children = (
+				E1008B69242E725400FCCBB2 /* Entities */,
+				E1008B68242E6F7800FCCBB2 /* BusinessLogic */,
+				E1008B67242E6F7300FCCBB2 /* UI */,
 				E1008B45242E6C2D00FCCBB2 /* AppDelegate.swift */,
 				E1008B47242E6C2D00FCCBB2 /* SceneDelegate.swift */,
 				E1008B49242E6C2D00FCCBB2 /* ViewController.swift */,
@@ -130,6 +140,55 @@
 				E1008B5E242E6C2E00FCCBB2 /* Info.plist */,
 			);
 			path = SkyEngTaskTests;
+			sourceTree = "<group>";
+		};
+		E1008B67242E6F7300FCCBB2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E1008B68242E6F7800FCCBB2 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				E1008B70242E740600FCCBB2 /* Workers */,
+				E1008B6F242E740100FCCBB2 /* Services */,
+				E1008B6E242E73FD00FCCBB2 /* Core */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		E1008B69242E725400FCCBB2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				E1008B6A242E726100FCCBB2 /* Word.swift */,
+				E1008B6C242E726800FCCBB2 /* Meaning.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		E1008B6E242E73FD00FCCBB2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E1008B71242E741600FCCBB2 /* NetworkManager.swift */,
+				E1008B73242E742A00FCCBB2 /* NetworkManagerImp.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E1008B6F242E740100FCCBB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E1008B70242E740600FCCBB2 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,7 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */,
+				E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */,
 				E1008B4A242E6C2D00FCCBB2 /* ViewController.swift in Sources */,
+				E1008B6B242E726100FCCBB2 /* Word.swift in Sources */,
+				E1008B74242E742A00FCCBB2 /* NetworkManagerImp.swift in Sources */,
 				E1008B46242E6C2D00FCCBB2 /* AppDelegate.swift in Sources */,
 				E1008B48242E6C2D00FCCBB2 /* SceneDelegate.swift in Sources */,
 			);
