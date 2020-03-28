@@ -21,6 +21,9 @@
 		E1008B7C242E853700FCCBB2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B7B242E853700FCCBB2 /* Result.swift */; };
 		E1008B7E242E9D2400FCCBB2 /* WordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B7D242E9D2400FCCBB2 /* WordService.swift */; };
 		E1008B80242E9D2C00FCCBB2 /* WordServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B7F242E9D2C00FCCBB2 /* WordServiceImp.swift */; };
+		E182B22C242ED5CF009C91CE /* UITableView+GenericDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */; };
+		E182B22E242ED5F8009C91CE /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */; };
+		E182B230242EE167009C91CE /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22F242EE167009C91CE /* Collection+Safe.swift */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
 		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
@@ -31,6 +34,7 @@
 		E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD6B242EC6F200155CAD /* TranslatePresenter.swift */; };
 		E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD70242EC83800155CAD /* WordTableViewCell.swift */; };
 		E189DD73242EC83800155CAD /* WordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E189DD71242EC83800155CAD /* WordTableViewCell.xib */; };
+		E1D3AE05242ECA4D005FFD61 /* WordCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D3AE04242ECA4D005FFD61 /* WordCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,9 @@
 		E1008B7D242E9D2400FCCBB2 /* WordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordService.swift; sourceTree = "<group>"; };
 		E1008B7F242E9D2C00FCCBB2 /* WordServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordServiceImp.swift; sourceTree = "<group>"; };
 		E133ABBC4DAB619A23DEEF3C /* Pods_SkyEngTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyEngTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+GenericDequeue.swift"; sourceTree = "<group>"; };
+		E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		E182B22F242EE167009C91CE /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
 		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
@@ -76,6 +83,7 @@
 		E189DD6B242EC6F200155CAD /* TranslatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenter.swift; sourceTree = "<group>"; };
 		E189DD70242EC83800155CAD /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		E189DD71242EC83800155CAD /* WordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordTableViewCell.xib; sourceTree = "<group>"; };
+		E1D3AE04242ECA4D005FFD61 /* WordCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +244,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E182B22A242ED5AC009C91CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */,
+				E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */,
+				E182B22F242EE167009C91CE /* Collection+Safe.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E189DD59242EA64C00155CAD /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,18 +308,20 @@
 		E189DD6E242EC80700155CAD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E189DD6F242EC81F00155CAD /* Cells */,
+				E182B22A242ED5AC009C91CE /* Extensions */,
+				E189DD6F242EC81F00155CAD /* WordCell */,
 			);
 			path = Common;
 			sourceTree = "<group>";
 		};
-		E189DD6F242EC81F00155CAD /* Cells */ = {
+		E189DD6F242EC81F00155CAD /* WordCell */ = {
 			isa = PBXGroup;
 			children = (
-				E189DD70242EC83800155CAD /* WordTableViewCell.swift */,
 				E189DD71242EC83800155CAD /* WordTableViewCell.xib */,
+				E189DD70242EC83800155CAD /* WordTableViewCell.swift */,
+				E1D3AE04242ECA4D005FFD61 /* WordCellViewModel.swift */,
 			);
-			path = Cells;
+			path = WordCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,15 +516,19 @@
 				E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */,
 				E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */,
 				E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */,
+				E182B22C242ED5CF009C91CE /* UITableView+GenericDequeue.swift in Sources */,
 				E1008B80242E9D2C00FCCBB2 /* WordServiceImp.swift in Sources */,
+				E182B230242EE167009C91CE /* Collection+Safe.swift in Sources */,
 				E1008B78242E7F4B00FCCBB2 /* AppError.swift in Sources */,
 				E189DD6A242EC67000155CAD /* TranslateViewController.swift in Sources */,
 				E1008B6B242E726100FCCBB2 /* Word.swift in Sources */,
 				E1008B7C242E853700FCCBB2 /* Result.swift in Sources */,
 				E1008B74242E742A00FCCBB2 /* NetworkManagerImp.swift in Sources */,
 				E1008B46242E6C2D00FCCBB2 /* AppDelegate.swift in Sources */,
+				E1D3AE05242ECA4D005FFD61 /* WordCellViewModel.swift in Sources */,
 				E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */,
 				E189DD53242EA06600155CAD /* WordWorker.swift in Sources */,
+				E182B22E242ED5F8009C91CE /* UIView+Identifier.swift in Sources */,
 				E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +610,11 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -646,6 +675,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/AlamofireImage\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

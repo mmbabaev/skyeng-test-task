@@ -37,6 +37,8 @@ extension TranslatePresenterImp: TranslatePresenter {
     }
     
     func loadMore(text: String) {
-        
+        worker.loadNextPage(search: text) { result in
+            
+        }
     }
 }
