@@ -21,7 +21,7 @@ final class TranslatePresenterImp {
     let router: TranslateRouter
     let worker: WordWorker
     
-    private var words = [Word]()
+    var words = [Word]()
     
     // MARK: - Init
     

@@ -35,6 +35,7 @@
 		E183BF1E2430ABCC00763B99 /* WordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF1D2430ABCC00763B99 /* WordPresenter.swift */; };
 		E183BF202430AF6A00763B99 /* Word.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183BF1F2430AF6A00763B99 /* Word.storyboard */; };
 		E183BF2224314D5100763B99 /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */; };
+		E183BF272431611000763B99 /* TranslatePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF262431611000763B99 /* TranslatePresenterTests.swift */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
 		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
@@ -96,6 +97,7 @@
 		E183BF1D2430ABCC00763B99 /* WordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPresenter.swift; sourceTree = "<group>"; };
 		E183BF1F2430AF6A00763B99 /* Word.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Word.storyboard; sourceTree = "<group>"; };
 		E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
+		E183BF262431611000763B99 /* TranslatePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatePresenterTests.swift; sourceTree = "<group>"; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
 		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				E189DD5F242EA6F600155CAD /* Mocks */,
+				E183BF23243160E600763B99 /* UI */,
 				E189DD59242EA64C00155CAD /* BusinessLogic */,
 				E1008B5E242E6C2E00FCCBB2 /* Info.plist */,
 			);
@@ -288,6 +291,30 @@
 				E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E183BF23243160E600763B99 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E183BF24243160F300763B99 /* Scenes */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E183BF24243160F300763B99 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E183BF25243160FA00763B99 /* Translate */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E183BF25243160FA00763B99 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				E183BF262431611000763B99 /* TranslatePresenterTests.swift */,
+			);
+			path = Translate;
 			sourceTree = "<group>";
 		};
 		E189DD59242EA64C00155CAD /* BusinessLogic */ = {
@@ -594,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E189DD64242EAB5F00155CAD /* Generated.swift in Sources */,
+				E183BF272431611000763B99 /* TranslatePresenterTests.swift in Sources */,
 				E189DD61242EA70400155CAD /* AutoMockableExtensions.swift in Sources */,
 				E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */,
 				E189DD66242EAEA500155CAD /* Arbitrary.swift in Sources */,

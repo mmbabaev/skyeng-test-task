@@ -18,12 +18,21 @@ class WordWorkerTests: XCTestCase {
     // MARK: - SUT
     
     var worker: WordWorkerImp!
+    
+    // MARK: - setup
 
     override func setUp() {
         
-        service = WordServiceMock()
+        service = .init()
         
         worker = WordWorkerImp(service: service)
+    }
+    
+    override func tearDown() {
+        super.tearDown()
+        
+        service = nil
+        worker = nil
     }
     
     // MARK: - loadNextPage
@@ -81,6 +90,7 @@ class WordWorkerTests: XCTestCase {
     
     func testLoadNextPage_isEnded() {
         // Given
+        let expectedError = AppError.cancelled
         let promise = expectation(description: #function)
         worker.canLoadMore = false
         
@@ -88,7 +98,7 @@ class WordWorkerTests: XCTestCase {
         worker.loadNextPage(search: Arbitrary.string) { result in
             
             // Then
-            XCTAssert(result.value!.isEmpty)
+            XCTAssertEqual(expectedError, result.error)
             XCTAssertFalse(self.service.searchPagePageSizeCallbackCalled)
             XCTAssertNil(self.worker.currentRequest)
             

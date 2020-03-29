@@ -11,6 +11,15 @@
 
 // sourcery:file: AutoMockable
 
+// MARK: - Scenes
+
+extension TranslateView {}
+extension TranslateRouter {}
+
+// MARK: - Workers
+
+extension WordWorker {}
+
 // MARK: - Services
 
 extension WordService {}
