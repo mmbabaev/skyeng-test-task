@@ -39,6 +39,7 @@ final class TranslatePresenterImp {
 extension TranslatePresenterImp: TranslatePresenter {
     
     func refresh(text: String) {
+        words = []
         worker.reset()
         loadMore(text: text)
     }

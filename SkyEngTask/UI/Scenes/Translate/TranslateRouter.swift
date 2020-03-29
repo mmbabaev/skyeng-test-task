@@ -20,7 +20,8 @@ final class TranslateRouterImp: Router {
 extension TranslateRouterImp: TranslateRouter {
     
     func routeToWord(_ word: Word) {
-        guard let wordVC = resolver.resolve(WordViewController.self, argument: word) else {
+        let input = WordInput(word: word)
+        guard let wordVC = resolver.resolve(WordViewController.self, argument: input) else {
             return
         }
         

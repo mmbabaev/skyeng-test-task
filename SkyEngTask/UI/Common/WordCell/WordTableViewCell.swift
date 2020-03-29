@@ -13,6 +13,7 @@ final class WordTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var wordImageView: UIImageView!
     
     // MARK: - Functions
 
@@ -22,6 +23,6 @@ final class WordTableViewCell: UITableViewCell {
     }
 
     func configure(with cellModel: WordCellViewModel) {
-        
+        titleLabel.text = cellModel.text
     }
 }

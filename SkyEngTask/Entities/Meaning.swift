@@ -13,8 +13,8 @@ struct Meaning: Decodable {
     }
     
     let id: Int
-    let previewUrl: String
-    let imageUrl: String
+    let previewUrl: String?
+    let imageUrl: String?
     
     private let translation: Translation
 }

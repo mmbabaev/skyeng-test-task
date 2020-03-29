@@ -49,9 +49,9 @@ extension TranslateViewController: TranslateView {
     func displayError() {
         refreshControl.endRefreshing()
         
-        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить перевод", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить перевод", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//        present(alert, animated: true, completion: nil)
     }
 }
 

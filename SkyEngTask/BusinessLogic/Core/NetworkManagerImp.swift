@@ -19,15 +19,32 @@ extension NetworkManagerImp: NetworkManager {
         
         AF.request(url, parameters: parameters)
             .validate()
-            .responseDecodable(of: T.self) { response in
-                
+            .responseDecodable(of: T.self) { [weak self] response in
             guard let value = response.value else {
                 // TODO: handle errors
-                callback(.failure(.network))
+                let error = self?.appError(from: response.error) ?? .unknown
+                callback(.failure(error))
                 return
             }
             
             callback(.success(value))
+        }
+    }
+}
+
+private extension NetworkManagerImp {
+    
+    
+    func appError(from afError: AFError?) -> AppError {
+        guard let afError = afError else {
+            return .unknown
+        }
+        
+        switch afError {
+        case .explicitlyCancelled:
+            return .cancelled
+        default:
+            return .network
         }
     }
 }

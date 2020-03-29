@@ -32,6 +32,9 @@
 		E183BEE824302E8300763B99 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BEE724302E8300763B99 /* WordViewController.swift */; };
 		E183BF18243030BB00763B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF17243030BB00763B99 /* SceneDelegate.swift */; };
 		E183BF1A243032A000763B99 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF192430329F00763B99 /* CoreAssembly.swift */; };
+		E183BF1C2430AB9200763B99 /* WordAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF1B2430AB9200763B99 /* WordAssembly.swift */; };
+		E183BF1E2430ABCC00763B99 /* WordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF1D2430ABCC00763B99 /* WordPresenter.swift */; };
+		E183BF202430AF6A00763B99 /* Word.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183BF1F2430AF6A00763B99 /* Word.storyboard */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
 		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
@@ -90,6 +93,9 @@
 		E183BEE724302E8300763B99 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		E183BF17243030BB00763B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E183BF192430329F00763B99 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		E183BF1B2430AB9200763B99 /* WordAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAssembly.swift; sourceTree = "<group>"; };
+		E183BF1D2430ABCC00763B99 /* WordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPresenter.swift; sourceTree = "<group>"; };
+		E183BF1F2430AF6A00763B99 /* Word.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Word.storyboard; sourceTree = "<group>"; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
 		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
@@ -332,7 +338,10 @@
 		E189DD68242EC64000155CAD /* Word */ = {
 			isa = PBXGroup;
 			children = (
+				E183BF1F2430AF6A00763B99 /* Word.storyboard */,
 				E183BEE724302E8300763B99 /* WordViewController.swift */,
+				E183BF1D2430ABCC00763B99 /* WordPresenter.swift */,
+				E183BF1B2430AB9200763B99 /* WordAssembly.swift */,
 			);
 			path = Word;
 			sourceTree = "<group>";
@@ -454,6 +463,7 @@
 			files = (
 				E1008B52242E6C2E00FCCBB2 /* LaunchScreen.storyboard in Resources */,
 				E189DD73242EC83800155CAD /* WordTableViewCell.xib in Resources */,
+				E183BF202430AF6A00763B99 /* Word.storyboard in Resources */,
 				E12AC5D72430025A006E355A /* Translate.storyboard in Resources */,
 				E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */,
 			);
@@ -569,6 +579,7 @@
 				E189DD6A242EC67000155CAD /* TranslateViewController.swift in Sources */,
 				E1008B6B242E726100FCCBB2 /* Word.swift in Sources */,
 				E12AC5E1243011F3006E355A /* Router.swift in Sources */,
+				E183BF1E2430ABCC00763B99 /* WordPresenter.swift in Sources */,
 				E12AC5D924300315006E355A /* TranslateRouter.swift in Sources */,
 				E1008B7C242E853700FCCBB2 /* Result.swift in Sources */,
 				E1008B74242E742A00FCCBB2 /* NetworkManagerImp.swift in Sources */,
@@ -576,6 +587,7 @@
 				E1D3AE05242ECA4D005FFD61 /* WordCellViewModel.swift in Sources */,
 				E12AC5E324301320006E355A /* TranslateAssembly.swift in Sources */,
 				E12AC5DE24300A56006E355A /* ErrorView.swift in Sources */,
+				E183BF1C2430AB9200763B99 /* WordAssembly.swift in Sources */,
 				E183BF1A243032A000763B99 /* CoreAssembly.swift in Sources */,
 				E183BF18243030BB00763B99 /* SceneDelegate.swift in Sources */,
 				E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */,

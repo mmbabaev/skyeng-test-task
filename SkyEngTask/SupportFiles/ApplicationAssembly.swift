@@ -15,6 +15,8 @@ final class ApplicationAssembly {
         
         assembler.apply(assemblies: [
             TranslateAssembly(),
+            WordAssembly(),
+            
             CoreAssembly()
         ])
         
