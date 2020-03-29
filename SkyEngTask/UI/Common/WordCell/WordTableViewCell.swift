@@ -2,8 +2,8 @@
 //  WordTableViewCell.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 28.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 28.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 import UIKit
@@ -17,12 +17,16 @@ final class WordTableViewCell: UITableViewCell {
     
     // MARK: - Functions
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        wordImageView.cancelImageRequest()
+        wordImageView.image = #imageLiteral(resourceName: "word_placeholder")
     }
 
     func configure(with cellModel: WordCellViewModel) {
         titleLabel.text = cellModel.text
+        
+        wordImageView.loadImage(urlString: cellModel.imageUrl)
     }
 }

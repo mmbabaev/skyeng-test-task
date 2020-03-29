@@ -2,8 +2,8 @@
 //  TranslatePresenter.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 28.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 28.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 protocol TranslatePresenter: AnyObject {
@@ -45,12 +45,17 @@ extension TranslatePresenterImp: TranslatePresenter {
     }
     
     func loadMore(text: String) {
+        guard worker.canLoadMore else {
+            view.endLoading()
+            return
+        }
+        
         worker.loadNextPage(search: text) { [weak self] result in
             switch result {
             case .success(let newWords):
                 self?.didLoadNewWords(newWords)
-            case .failure:
-                self?.view.displayError()
+            case .failure(let error):
+                self?.handleLoadError(error)
             }
         }
     }
@@ -71,5 +76,13 @@ private extension TranslatePresenterImp {
         
         let cellModels = words.map { WordCellViewModel(word: $0) }
         view.displayCells(cellModels)
+    }
+    
+    func handleLoadError(_ error: AppError) {
+        guard error != .cancelled else {
+            return
+        }
+        
+        view.displayError()
     }
 }

@@ -2,8 +2,8 @@
 //  WordWorkerImp.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 27.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 27.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 final class WordWorkerImp {
@@ -13,7 +13,7 @@ final class WordWorkerImp {
     let service: WordService
     
     var currentPage = 0
-    var isEnded = false
+    var canLoadMore = true
     var currentRequest: NetworkRequest?
     
     let pageSize = 10
@@ -30,8 +30,8 @@ final class WordWorkerImp {
 extension WordWorkerImp: WordWorker {
     
     func loadNextPage(search: String, callback: @escaping (Result<[Word]>) -> Void) {
-        guard !isEnded else {
-            callback(.success([]))
+        guard canLoadMore else {
+            callback(.failure(.cancelled))
             return
         }
         
@@ -43,17 +43,15 @@ extension WordWorkerImp: WordWorker {
             case .success(let words):
                 self?.successLoaded(words)
                 callback(.success(words))
-            case .failure(let error) where error == .cancelled:
-                callback(.success([]))
             case .failure(let error):
-                 callback(.failure(error))
+                callback(.failure(error))
             }
         }
     }
     
     func reset() {
         currentPage = 0
-        isEnded = false
+        canLoadMore = true
     }
 }
 
@@ -65,7 +63,7 @@ private extension WordWorkerImp {
         currentPage = currentPage + 1
         
         if words.count < pageSize {
-            isEnded = true
+            canLoadMore = false
         }
     }
 }
