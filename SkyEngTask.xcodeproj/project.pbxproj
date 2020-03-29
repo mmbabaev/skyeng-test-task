@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D65774069CE135F8DBEE5781 /* Pods_SkyEngTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF04DB6153A323A26ABFDC2D /* Pods_SkyEngTask.framework */; };
 		E1008B46242E6C2D00FCCBB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B45242E6C2D00FCCBB2 /* AppDelegate.swift */; };
-		E1008B4D242E6C2D00FCCBB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1008B4B242E6C2D00FCCBB2 /* Main.storyboard */; };
 		E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1008B4E242E6C2E00FCCBB2 /* Assets.xcassets */; };
 		E1008B52242E6C2E00FCCBB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1008B50242E6C2E00FCCBB2 /* LaunchScreen.storyboard */; };
 		E1008B6B242E726100FCCBB2 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1008B6A242E726100FCCBB2 /* Word.swift */; };
@@ -29,6 +28,10 @@
 		E182B22C242ED5CF009C91CE /* UITableView+GenericDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */; };
 		E182B22E242ED5F8009C91CE /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */; };
 		E182B230242EE167009C91CE /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22F242EE167009C91CE /* Collection+Safe.swift */; };
+		E183BEE624302CBE00763B99 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BEE524302CBE00763B99 /* ApplicationAssembly.swift */; };
+		E183BEE824302E8300763B99 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BEE724302E8300763B99 /* WordViewController.swift */; };
+		E183BF18243030BB00763B99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF17243030BB00763B99 /* SceneDelegate.swift */; };
+		E183BF1A243032A000763B99 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF192430329F00763B99 /* CoreAssembly.swift */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
 		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
@@ -61,7 +64,6 @@
 		CD5B24C8D3A0E24799403145 /* Pods-SkyEngTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyEngTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-SkyEngTaskTests/Pods-SkyEngTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1008B42242E6C2D00FCCBB2 /* SkyEngTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyEngTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1008B45242E6C2D00FCCBB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E1008B4C242E6C2D00FCCBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1008B4E242E6C2E00FCCBB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1008B51242E6C2E00FCCBB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1008B53242E6C2E00FCCBB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,10 @@
 		E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+GenericDequeue.swift"; sourceTree = "<group>"; };
 		E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
 		E182B22F242EE167009C91CE /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		E183BEE524302CBE00763B99 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		E183BEE724302E8300763B99 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		E183BF17243030BB00763B99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E183BF192430329F00763B99 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
 		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
@@ -194,6 +200,7 @@
 			children = (
 				E1008B77242E7F4B00FCCBB2 /* AppError.swift */,
 				E1008B7B242E853700FCCBB2 /* Result.swift */,
+				E183BF192430329F00763B99 /* CoreAssembly.swift */,
 				E1008B70242E740600FCCBB2 /* Workers */,
 				E1008B6F242E740100FCCBB2 /* Services */,
 				E1008B6E242E73FD00FCCBB2 /* Core */,
@@ -242,6 +249,8 @@
 			children = (
 				E1008B76242E74B200FCCBB2 /* Resources */,
 				E1008B45242E6C2D00FCCBB2 /* AppDelegate.swift */,
+				E183BF17243030BB00763B99 /* SceneDelegate.swift */,
+				E183BEE524302CBE00763B99 /* ApplicationAssembly.swift */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -250,7 +259,6 @@
 			isa = PBXGroup;
 			children = (
 				E1008B4E242E6C2E00FCCBB2 /* Assets.xcassets */,
-				E1008B4B242E6C2D00FCCBB2 /* Main.storyboard */,
 				E1008B50242E6C2E00FCCBB2 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -324,6 +332,7 @@
 		E189DD68242EC64000155CAD /* Word */ = {
 			isa = PBXGroup;
 			children = (
+				E183BEE724302E8300763B99 /* WordViewController.swift */,
 			);
 			path = Word;
 			sourceTree = "<group>";
@@ -447,7 +456,6 @@
 				E189DD73242EC83800155CAD /* WordTableViewCell.xib in Resources */,
 				E12AC5D72430025A006E355A /* Translate.storyboard in Resources */,
 				E1008B4F242E6C2E00FCCBB2 /* Assets.xcassets in Resources */,
-				E1008B4D242E6C2D00FCCBB2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,8 +557,10 @@
 			files = (
 				E1008B7E242E9D2400FCCBB2 /* WordService.swift in Sources */,
 				E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */,
+				E183BEE824302E8300763B99 /* WordViewController.swift in Sources */,
 				E12AC5E524301C35006E355A /* UIViewControlle+Storyboard.swift in Sources */,
 				E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */,
+				E183BEE624302CBE00763B99 /* ApplicationAssembly.swift in Sources */,
 				E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */,
 				E182B22C242ED5CF009C91CE /* UITableView+GenericDequeue.swift in Sources */,
 				E1008B80242E9D2C00FCCBB2 /* WordServiceImp.swift in Sources */,
@@ -566,6 +576,8 @@
 				E1D3AE05242ECA4D005FFD61 /* WordCellViewModel.swift in Sources */,
 				E12AC5E324301320006E355A /* TranslateAssembly.swift in Sources */,
 				E12AC5DE24300A56006E355A /* ErrorView.swift in Sources */,
+				E183BF1A243032A000763B99 /* CoreAssembly.swift in Sources */,
+				E183BF18243030BB00763B99 /* SceneDelegate.swift in Sources */,
 				E189DD72242EC83800155CAD /* WordTableViewCell.swift in Sources */,
 				E189DD53242EA06600155CAD /* WordWorker.swift in Sources */,
 				E182B22E242ED5F8009C91CE /* UIView+Identifier.swift in Sources */,
@@ -595,14 +607,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E1008B4B242E6C2D00FCCBB2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1008B4C242E6C2D00FCCBB2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1008B50242E6C2E00FCCBB2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

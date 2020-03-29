@@ -12,6 +12,7 @@ import Swinject
 class Router {
     
     unowned let viewController: UIViewController
+    let resolver = ApplicationAssembly.resolver
     
     init(viewController: UIViewController) {
         self.viewController = viewController

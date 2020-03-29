@@ -14,12 +14,17 @@ protocol TranslateRouter {
 }
 
 final class TranslateRouterImp: Router {
+    
 }
 
 extension TranslateRouterImp: TranslateRouter {
     
     func routeToWord(_ word: Word) {
+        guard let wordVC = resolver.resolve(WordViewController.self, argument: word) else {
+            return
+        }
         
-
+        let navigationController = viewController.navigationController
+        navigationController?.pushViewController(wordVC, animated: true)
     }
 }

@@ -24,10 +24,10 @@ final class TranslateAssembly: Assembly {
             )
         }
         
-        container.register(TranslateViewController.self) { (resolver) in
-            let viewController: TranslateViewController = UIStoryboard.createViewController()
-            viewController.presenter = resolver.resolve(TranslatePresenter.self, argument: viewController)
-            return viewController
+        container.register(TranslateViewController.self) { resolver in
+            let vc: TranslateViewController = UIStoryboard.createViewController()
+            vc.presenter = resolver.resolve(TranslatePresenter.self, argument: vc)
+            return vc
         }
     }
 }
