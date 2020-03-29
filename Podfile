@@ -7,6 +7,7 @@ target 'SkyEngTask' do
 
   pod 'Alamofire', '5.0.5'
   pod 'AlamofireImage', '4.0.3'
+  pod 'Swinject', '2.7.1'
 
   # Pods for SkyEngTask
 

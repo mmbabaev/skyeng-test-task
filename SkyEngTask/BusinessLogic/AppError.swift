@@ -11,5 +11,6 @@ enum AppError: Error {
     case
     network,
     parsing,
+    cancelled,
     unknown
 }

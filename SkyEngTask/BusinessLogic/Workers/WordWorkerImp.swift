@@ -43,8 +43,10 @@ extension WordWorkerImp: WordWorker {
             case .success(let words):
                 self?.successLoaded(words)
                 callback(.success(words))
+            case .failure(let error) where error == .cancelled:
+                callback(.success([]))
             case .failure(let error):
-                callback(.failure(error))
+                 callback(.failure(error))
             }
         }
     }
