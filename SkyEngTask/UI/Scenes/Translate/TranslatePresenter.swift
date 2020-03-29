@@ -45,12 +45,9 @@ extension TranslatePresenterImp: TranslatePresenter {
     }
     
     func loadMore(text: String) {
-        guard worker.canLoadMore else {
-            view.endLoading()
-            return
-        }
-        
         worker.loadNextPage(search: text) { [weak self] result in
+            self?.view.endLoading()
+            
             switch result {
             case .success(let newWords):
                 self?.didLoadNewWords(newWords)

@@ -13,9 +13,21 @@ protocol TranslateRouter {
     func routeToWord(_ word: Word)
 }
 
-final class TranslateRouterImp: Router {
+final class TranslateRouterImp {
     
+    // MARK: - Properties
+    
+    unowned let viewController: UIViewController
+    let resolver = ApplicationAssembly.resolver
+    
+    // MARK: - Init
+    
+    init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
 }
+
+// MARK: - TranslateRouter
 
 extension TranslateRouterImp: TranslateRouter {
     

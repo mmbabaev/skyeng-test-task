@@ -22,7 +22,6 @@
 		E12AC5D72430025A006E355A /* Translate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12AC5D62430025A006E355A /* Translate.storyboard */; };
 		E12AC5D924300315006E355A /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12AC5D824300315006E355A /* TranslateRouter.swift */; };
 		E12AC5DE24300A56006E355A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12AC5DD24300A56006E355A /* ErrorView.swift */; };
-		E12AC5E1243011F3006E355A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12AC5E0243011F3006E355A /* Router.swift */; };
 		E12AC5E324301320006E355A /* TranslateAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12AC5E224301320006E355A /* TranslateAssembly.swift */; };
 		E12AC5E524301C35006E355A /* UIViewControlle+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12AC5E424301C35006E355A /* UIViewControlle+Storyboard.swift */; };
 		E182B22C242ED5CF009C91CE /* UITableView+GenericDequeue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */; };
@@ -84,7 +83,6 @@
 		E12AC5D62430025A006E355A /* Translate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Translate.storyboard; sourceTree = "<group>"; };
 		E12AC5D824300315006E355A /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
 		E12AC5DD24300A56006E355A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		E12AC5E0243011F3006E355A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E12AC5E224301320006E355A /* TranslateAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAssembly.swift; sourceTree = "<group>"; };
 		E12AC5E424301C35006E355A /* UIViewControlle+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewControlle+Storyboard.swift"; sourceTree = "<group>"; };
 		E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+GenericDequeue.swift"; sourceTree = "<group>"; };
@@ -280,14 +278,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		E12AC5DF243011E5006E355A /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				E12AC5E0243011F3006E355A /* Router.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
 		E182B22A242ED5AC009C91CE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,7 +351,6 @@
 		E189DD6E242EC80700155CAD /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				E12AC5DF243011E5006E355A /* Base */,
 				E12AC5DA24300778006E355A /* Protocols */,
 				E182B22A242ED5AC009C91CE /* Extensions */,
 				E189DD6F242EC81F00155CAD /* WordCell */,
@@ -582,7 +571,6 @@
 				E1008B78242E7F4B00FCCBB2 /* AppError.swift in Sources */,
 				E189DD6A242EC67000155CAD /* TranslateViewController.swift in Sources */,
 				E1008B6B242E726100FCCBB2 /* Word.swift in Sources */,
-				E12AC5E1243011F3006E355A /* Router.swift in Sources */,
 				E183BF1E2430ABCC00763B99 /* WordPresenter.swift in Sources */,
 				E12AC5D924300315006E355A /* TranslateRouter.swift in Sources */,
 				E1008B7C242E853700FCCBB2 /* Result.swift in Sources */,

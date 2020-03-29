@@ -43,13 +43,13 @@ extension TranslateViewController: TranslateView {
     func displayCells(_ cellModels: [WordCellViewModel]) {
         self.cellModels = cellModels
         
-        refreshControl.endRefreshing()
         tableView.reloadData()
     }
     
     func displayError() {
-        print("DISPLAY ERROR")
-        refreshControl.endRefreshing()
+        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить перевод", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     func endLoading() {
@@ -99,7 +99,7 @@ extension TranslateViewController: UITableViewDelegate {
 extension TranslateViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.perform(#selector(refresh), with: nil, afterDelay: 0.7)
+        self.perform(#selector(refresh), with: nil, afterDelay: 0.5)
     }
 }
 
