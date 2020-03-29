@@ -2,8 +2,8 @@
 //  WordPresenter.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 29.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 29.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 struct WordInput {
@@ -17,8 +17,12 @@ protocol WordPresenter {
 
 final class WordPresenterImp {
     
+    // MARK: - Properties
+    
     unowned let view: WordView
     let word: Word
+    
+    // MARK: - Init
     
     init(view: WordView,
          input: WordInput) {
@@ -27,9 +31,19 @@ final class WordPresenterImp {
     }
 }
 
+// MARK: - WordPresenter
+
 extension WordPresenterImp: WordPresenter {
     
     func showWord() {
-        
+        let meaning = word.meanings.first
+        let translate = meaning?.tranlationText ?? ""
+        let imageUrl = meaning?.imageUrl
+         
+        view.displayWord(
+            text: word.text,
+            translate: translate,
+            imageUrl: imageUrl
+        )
     }
 }

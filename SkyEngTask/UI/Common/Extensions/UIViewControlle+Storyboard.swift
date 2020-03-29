@@ -2,7 +2,7 @@
 //  UIViewController+Storyboard.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 12/03/2019.
+//  Created by Mikhail on 12/03/2019.
 //  Copyright © 2019 SwappyTeam. All rights reserved.
 //
 

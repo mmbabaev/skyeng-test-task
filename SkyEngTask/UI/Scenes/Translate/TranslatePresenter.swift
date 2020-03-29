@@ -2,8 +2,8 @@
 //  TranslatePresenter.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 28.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 28.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 protocol TranslatePresenter: AnyObject {
@@ -67,6 +67,11 @@ extension TranslatePresenterImp: TranslatePresenter {
 private extension TranslatePresenterImp {
     
     func didLoadNewWords(_ newWords: [Word]) {
+        guard newWords.isEmpty else {
+            view.endLoading()
+            return
+        }
+        
         words.append(contentsOf: newWords)
         
         let cellModels = words.map { WordCellViewModel(word: $0) }

@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 29.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 29.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 import UIKit
@@ -21,7 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ApplicationAssembly.resolver.resolve(TranslateViewController.self)!
+        
+        let translateVC = ApplicationAssembly.resolver.resolve(TranslateViewController.self)!
+        let navigationVC = UINavigationController(rootViewController: translateVC)
+        window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }
 

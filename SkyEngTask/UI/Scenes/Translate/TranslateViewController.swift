@@ -2,8 +2,8 @@
 //  TranslateViewController.swift
 //  SkyEngTask
 //
-//  Created by Mihail on 28.03.2020.
-//  Copyright © 2020 Mihail. All rights reserved.
+//  Created by Mikhail on 28.03.2020.
+//  Copyright © 2020 Mikhail. All rights reserved.
 //
 
 import UIKit
@@ -12,6 +12,7 @@ protocol TranslateView: AnyObject {
     
     func displayCells(_ cellModels: [WordCellViewModel])
     func displayError()
+    func endLoading()
 }
 
 final class TranslateViewController: UIViewController {
@@ -47,11 +48,12 @@ extension TranslateViewController: TranslateView {
     }
     
     func displayError() {
+        print("DISPLAY ERROR")
         refreshControl.endRefreshing()
-        
-//        let alert = UIAlertController(title: "Ошибка", message: "Не удалось загрузить перевод", preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-//        present(alert, animated: true, completion: nil)
+    }
+    
+    func endLoading() {
+        refreshControl.endRefreshing()
     }
 }
 
@@ -80,6 +82,15 @@ extension TranslateViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter.selectWord(at: indexPath.row)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let isLastCell = indexPath.row == cellModels.count - 1
+        if isLastCell {
+            presenter.loadMore(text: searchBar.text ?? "")
+        }
     }
 }
 
@@ -88,7 +99,7 @@ extension TranslateViewController: UITableViewDelegate {
 extension TranslateViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        presenter.refresh(text: searchText)
+        self.perform(#selector(refresh), with: nil, afterDelay: 0.7)
     }
 }
 
