@@ -35,6 +35,7 @@
 		E183BF1C2430AB9200763B99 /* WordAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF1B2430AB9200763B99 /* WordAssembly.swift */; };
 		E183BF1E2430ABCC00763B99 /* WordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF1D2430ABCC00763B99 /* WordPresenter.swift */; };
 		E183BF202430AF6A00763B99 /* Word.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E183BF1F2430AF6A00763B99 /* Word.storyboard */; };
+		E183BF2224314D5100763B99 /* UIImageView+ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */; };
 		E189DD53242EA06600155CAD /* WordWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD52242EA06600155CAD /* WordWorker.swift */; };
 		E189DD55242EA06C00155CAD /* WordWorkerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD54242EA06C00155CAD /* WordWorkerImp.swift */; };
 		E189DD5E242EA67E00155CAD /* WordWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */; };
@@ -96,6 +97,7 @@
 		E183BF1B2430AB9200763B99 /* WordAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordAssembly.swift; sourceTree = "<group>"; };
 		E183BF1D2430ABCC00763B99 /* WordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPresenter.swift; sourceTree = "<group>"; };
 		E183BF1F2430AF6A00763B99 /* Word.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Word.storyboard; sourceTree = "<group>"; };
+		E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageLoader.swift"; sourceTree = "<group>"; };
 		E189DD52242EA06600155CAD /* WordWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorker.swift; sourceTree = "<group>"; };
 		E189DD54242EA06C00155CAD /* WordWorkerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerImp.swift; sourceTree = "<group>"; };
 		E189DD5D242EA67E00155CAD /* WordWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordWorkerTests.swift; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				E182B22B242ED5CF009C91CE /* UITableView+GenericDequeue.swift */,
 				E182B22D242ED5F8009C91CE /* UIView+Identifier.swift */,
 				E182B22F242EE167009C91CE /* Collection+Safe.swift */,
+				E183BF2124314D5100763B99 /* UIImageView+ImageLoader.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				E1008B72242E741600FCCBB2 /* NetworkManager.swift in Sources */,
 				E183BEE824302E8300763B99 /* WordViewController.swift in Sources */,
 				E12AC5E524301C35006E355A /* UIViewControlle+Storyboard.swift in Sources */,
+				E183BF2224314D5100763B99 /* UIImageView+ImageLoader.swift in Sources */,
 				E1008B6D242E726800FCCBB2 /* Meaning.swift in Sources */,
 				E183BEE624302CBE00763B99 /* ApplicationAssembly.swift in Sources */,
 				E189DD6C242EC6F200155CAD /* TranslatePresenter.swift in Sources */,

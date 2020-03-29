@@ -3,7 +3,7 @@
 //  UITableView+GenericDequeue.swift
 //  Swappy
 //
-//  Created by Mihail on 12/05/2019.
+//  Created by Mikhail on 12/05/2019.
 //  Copyright © 2019 SwappyTeam. All rights reserved.
 //
 
