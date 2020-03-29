@@ -82,7 +82,7 @@ class WordWorkerTests: XCTestCase {
     func testLoadNextPage_isEnded() {
         // Given
         let promise = expectation(description: #function)
-        worker.isEnded = true
+        worker.canLoadMore = false
         
         // When
         worker.loadNextPage(search: Arbitrary.string) { result in
@@ -98,17 +98,17 @@ class WordWorkerTests: XCTestCase {
         wait(for: [promise], timeout: timeout)
     }
     
-    func testLoadNextPage_setIsEnded() {
+    func testLoadNextPage_setCanLoadMore() {
         // Given
         let promise = expectation(description: #function)
-        worker.isEnded = false
+        worker.canLoadMore = true
         setupLoadNextPageService(.success([Arbitrary.word]))
         
         // When
         worker.loadNextPage(search: Arbitrary.string) { result in
             
             // Then
-            XCTAssert(self.worker.isEnded)
+            XCTAssertFalse(self.worker.canLoadMore)
             
             promise.fulfill()
         }
@@ -122,14 +122,14 @@ class WordWorkerTests: XCTestCase {
         // Given
         let expectedPage = 0
         worker.currentPage = 100500
-        worker.isEnded = true
+        worker.canLoadMore = false
         
         // When
         worker.reset()
         
         // Then
         XCTAssertEqual(worker.currentPage, expectedPage)
-        XCTAssertFalse(worker.isEnded)
+        XCTAssert(worker.canLoadMore)
     }
 }
 

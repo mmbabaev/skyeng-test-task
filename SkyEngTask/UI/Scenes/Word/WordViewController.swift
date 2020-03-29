@@ -41,5 +41,7 @@ extension WordViewController: WordView {
                      imageUrl: String?) {
         textLabel.text = text
         translateLabel.text = translate
+        
+        imageView.loadImage(urlString: imageUrl)
     }
 }

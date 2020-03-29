@@ -9,8 +9,10 @@
 struct WordCellViewModel {
     
     let text: String
+    let imageUrl: String?
     
     init(word: Word) {
         text = word.text
+        imageUrl = word.meanings.first?.previewUrl
     }
 }

@@ -17,12 +17,16 @@ final class WordTableViewCell: UITableViewCell {
     
     // MARK: - Functions
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        wordImageView.cancelImageRequest()
+        wordImageView.image = #imageLiteral(resourceName: "word_placeholder")
     }
 
     func configure(with cellModel: WordCellViewModel) {
         titleLabel.text = cellModel.text
+        
+        wordImageView.loadImage(urlString: cellModel.imageUrl)
     }
 }

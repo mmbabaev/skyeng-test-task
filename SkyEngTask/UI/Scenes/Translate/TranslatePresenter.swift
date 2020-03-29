@@ -45,12 +45,17 @@ extension TranslatePresenterImp: TranslatePresenter {
     }
     
     func loadMore(text: String) {
+        guard worker.canLoadMore else {
+            view.endLoading()
+            return
+        }
+        
         worker.loadNextPage(search: text) { [weak self] result in
             switch result {
             case .success(let newWords):
                 self?.didLoadNewWords(newWords)
-            case .failure:
-                self?.view.displayError()
+            case .failure(let error):
+                self?.handleLoadError(error)
             }
         }
     }
@@ -67,14 +72,17 @@ extension TranslatePresenterImp: TranslatePresenter {
 private extension TranslatePresenterImp {
     
     func didLoadNewWords(_ newWords: [Word]) {
-        guard newWords.isEmpty else {
-            view.endLoading()
-            return
-        }
-        
         words.append(contentsOf: newWords)
         
         let cellModels = words.map { WordCellViewModel(word: $0) }
         view.displayCells(cellModels)
+    }
+    
+    func handleLoadError(_ error: AppError) {
+        guard error != .cancelled else {
+            return
+        }
+        
+        view.displayError()
     }
 }
